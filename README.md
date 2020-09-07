@@ -1,26 +1,32 @@
-# README
+# Ruby Data Storage App
+A create, read, update and delete online database
 
-Giang Hello App Ruby
+Author:  Giang Khuat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Link: https://grintech.herokuapp.com/
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+#  Application Description
 
-* Configuration
+The application's purpose is to help organizationss store and organize their history of contact, manage their network information and maintain relationship
 
-* Database creation
+# Organizations' Administrators can:
+ * Create a new contact, their information and related notes from previous meetings
+ * Search and read contact
+ * Update contact's information
+ * Delete contact
+ 
 
-* Database initialization
+# Prerequisites:
 
-* How to run the test suite
+* Puby
+* Rails
 
-* Services (job queues, cache servers, search engines, etc.)
+ 
+# References
 
-* Deployment instructions
+* Michael Hartl Rails Tutorial
 
-* ...
+* Colt Steele's Web Developer Tutorial on Udemy
+
