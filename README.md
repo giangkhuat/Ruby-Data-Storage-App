@@ -24,6 +24,31 @@ The application's purpose is to help organizationss store and organize their his
 * Rails
 
  
+ ## Getting started
+
+* Clone the repo and then install the needed gems:
+
+```
+$ bundle install --without production
+```
+
+* Migrate the database
+
+```
+$ rails db:migrate
+```
+ 
+* Run the tests to make sure everything is working
+
+```
+$ rails test
+```
+
+* Start the server
+
+```
+$ rails server
+```
 # References
 
 * Michael Hartl Rails Tutorial
