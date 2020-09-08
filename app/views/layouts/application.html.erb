@@ -1,15 +1,27 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>HelloApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<!doctype html>
+<html lang="en">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    <%= yield %>
-  </body>
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="main.css">
+   ​<%= csrf_meta_tags %>
+   ​<%= csp_meta_tag %>
+
+   ​<!-- <%= stylesheet_link_tag 'application', media: 'all','data-turbolinks-track': 'reload' %> -->
+   ​<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <title><%= yield(:title) %> | Note - A GrinTech Application</title>
+</head>
+
+<body>
+​<%= yield %>
+</body>
+
 </html>

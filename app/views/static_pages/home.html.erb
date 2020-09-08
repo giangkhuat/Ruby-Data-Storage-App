@@ -1,2 +1,130 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, "Home") %>
+<nav class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-lg ">
+   <div class="container">
+      <a class="navbar-brand" href="#">Shiny River</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">About me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link active" href="#"> Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Explore
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Musings</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Cooking</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Photography</a>
+               </div>
+            </li>
+         </ul>
+         <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: white">Search</button>
+         </form>
+      </div>
+   </div>
+</nav>
+<section id="header" class="jumbotron text-center">
+   <h1 class="display-3">
+      Giang Khuat Minh
+   </h1>
+   <p class="lead">
+      Xin chao ! Nice to meet you !
+   </p>
+   <div class="text-center">
+      <!-- <h3 class="contact-heading">Drop me an <a href="mailto:khuatgia@grinnell.edu" target="_blank">email</a> anytime! 
+         </h3>  -->
+      <div class="icons">
+         <a id="email" href="mailto:khuatgia@grinnell.edu" target="_blank" alt="Email">
+         <img src="pictures/email.png" alt="Email me" style="width: 64px; height: 64px;">
+         </a>
+         <a id="linkedin" href="https://www.linkedin.com/in/giangkhuat/" target="_blank">
+         <img src="pictures/linkedin-logo.png" alt="Giang's LinkedIn" style="width: 64px; height: 64px;">
+         </a>
+         <a id="github" href="https://github.com/giangkhuat" target="_blank" alt="Giang's Github">  
+         <img src="pictures/github.png" style="width: 64px; height: 64px;">
+         </a>
+      </div>
+   </div>
+</section>
+<section id="gallery">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 col-lg-4 mt-3 d-flex align-items-stretch">
+            <div class="card">
+               <div class="card-header">
+                  <h5>About me</h5>
+               </div>
+               <div class="card-body" style="color: black">
+                  <p class="card-text">
+                  <p class="intro">
+                     I'm currently a junior at Grinnell College, where I'm pursuing a Bachelor's degree in Computer Science and Economics. I like to learn about science and creating techological products for social good.
+                  </p>
+                  <p class="intro">
+                     I strongly believe in using technology to improve people's lives based on their needs. 
+                  </p>
+                  <p class="intro">
+                     In my free time, I love to exercise, cook, and learn foreign languages.
+                  </p>
+                  </p>
+                  <a href="#" class="btn btn-outline-success btn-sm"> Contact me </a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-12 col-lg-4 mt-3 d-flex align-items-stretch">
+            <div class="card">
+               <div class="card-header">
+                  <h5>How I got here</h5>
+               </div>
+               <div class="card-body" style="color: black">
+                  <p class="card-text">
+                  <p>
+                     In my firts intro to CS class, we learned functional programming and I had to strecth my brain so hard to grasp many new concepts in a short amount of time.
+                  </p>
+                  <p>
+                     Still, the tougher it got, the harder I told myself I need to try because I believe the more I need to fight for something, the stronger my love for it grows.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <div class=" col-md-12 col-lg-4 mt-3  d-flex align-items-stretch">
+            <div class="card">
+               <div class="card-header">
+                  <h5>My Projects</h5>
+               </div>
+               <div class="card-body" style="color: black">
+                  <p class="card-text">
+                  <ul id="projects">
+                     <li><a href="https://github.com/giangkhuat/Python-CRUD-Web-Application"> Python Create-Read-Update-Delete web application </a> for non profit organizations to store donors' information using Flask template </li>
+                     <li> <a href="#">Node.js YelpCamp web application </a> as part of a Udemy Web Developer BootCamp </li>
+                     <li>UIPath program to automate data extraction for loan processes as part of my internship at Iowa Center for Economic Success</li>
+                     <li> <a href="https://github.com/giangkhuat/Blockchain-Simulation-Program">Java Blockchain program </a> to simulate cashless transactions between two parties </li>
+                     <li>Scheme machine learning project to predict prisoners' sentence length with 5 other students in my CS intro class</li>
+                     <li>
+                        <a href="files/GKhuat tech resume.pdf" target="_blank">My Resume [PDF]</a>
+                     </li>
+                  </ul>
+                  </p>
+                  <a href="#" class="btn btn-outline-success btn-sm"> Explore</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+   src="https://code.jquery.com/jquery-3.4.1.min.js"
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
