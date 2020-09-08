@@ -13,3 +13,52 @@
  *= require_tree .
  *= require_self
  */
+
+
+#content {
+     text-align: center;
+     padding-top: 15%;
+     text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.2);
+}
+ html {
+     height: 100%;
+}
+ body {
+     background: #C6FFDD;
+    /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background-size: cover;
+     background-position: center;
+     font-family: 'Nanum Myeongjo', serif;
+     color: white;
+}
+ h1 {
+     font-weight: 700;
+     font-size: 5em;
+}
+ hr {
+     width: 400px;
+     border-top: 1px solid #f8f8f8;
+     border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+ .card-img-top {
+     height: 250px;
+     width: 100%;
+     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.3);
+}
+ #header {
+     color: black;
+     /*
+      background: url(https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+     */
+      background: none;
+      background-size: cover;
+}
+ .card-header {
+     color: black;
+     text-align: center;
+     padding-top: 15px;
+}
