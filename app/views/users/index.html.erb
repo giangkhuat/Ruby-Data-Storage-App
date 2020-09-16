@@ -1,0 +1,22 @@
+<section id="header" class="jumbotron text-center">
+   <div id="header-content">
+      <h1 class="display-3">
+         Users List
+      </h1>
+   </div>
+      <ul>
+      <% @users_list.each do | user | %>
+      <li>
+         <h2>
+            <%= user.name %>
+         </h2>
+         <h2>
+            <%= user.email %>
+         </h2>
+      </li>
+      <% end %>
+   </ul>
+</section>
+<div>
+    
+</div>
