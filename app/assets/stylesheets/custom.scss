@@ -18,3 +18,30 @@ width: 100%;
 margin-top: 45px;
 @include box_sizing;
 }
+
+
+/* general container */
+.content-container {
+  color: #000000;  
+  margin-top: 8%;
+}
+
+.gravatar {
+float: left;
+margin-right: 10px;
+}
+.gravatar_edit {
+margin-top: 15px;
+}
+
+
+/*form sign up */
+input, textarea, select, .uneditable-input {
+border: 1px solid #bbb;
+width: 100%;
+margin-bottom: 15px;
+@include box_sizing;
+}
+input {
+height: auto !important;
+}
