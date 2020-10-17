@@ -24,7 +24,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     #get static_pages_about_url
     get about_path
     assert_response :success
-    assert_select "title", "About | #{@base_title}"
+    assert_select "title", "About GrinTECH | #{@base_title}"
   end
   
    test "Should get contact" do
